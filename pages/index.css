@@ -1,0 +1,243 @@
+/* * {
+  outline: 1px solid red;
+} */
+
+@import url(../vendor/normalize.css);
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../vendor/fonts/Inter-Regular.woff2") format("woff2"),
+    url("../vendor/fonts/Inter-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../vendor/fonts/Inter-Bold.woff2") format("woff2"),
+    url("../vendor/fonts/Inter-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("../vendor/fonts/Inter-Black.woff") format("woff");
+}
+
+.page {
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: #2a2c2f;
+  font-family: "Inter", "Arial", sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+.header {
+  margin: 0 auto;
+  max-height: 52px;
+  padding: 28px 48px 0 48px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  object-fit: contain;
+}
+
+.header__lang-links {
+  display: flex;
+  gap: 18px;
+  align-items: end;
+  list-style-type: none;
+  padding: 0 0 6px 0;
+  margin: 0;
+}
+
+.header__lang-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.17;
+  color: #ffffff;
+  text-decoration-line: none;
+}
+
+.header__lang-link_active {
+  border-bottom: 2.5px solid #ffffff;
+}
+
+.lead {
+  padding: 56px 0 0 0;
+}
+
+.section__title {
+  margin: 0;
+  padding: 0 calc((100% - 720px) / 2);
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 1.04;
+  color: #ffffff;
+  text-align: center;
+}
+
+.section__subtitle {
+  margin: 0;
+  padding: 32px calc((100% - 640px) / 2) 64px calc((100% - 640px) / 2);
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.2;
+  color: #ffffff;
+  text-align: center;
+}
+
+.lead__image {
+  display: block;
+  max-width: 984px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.lead__caption {
+  margin: 0;
+  padding: 8px 0 0 148px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.4;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.intro {
+  margin: 0;
+  padding: 92px 442px 0 148px;
+  max-width: 690px;
+}
+
+.intro__title {
+  margin: 0;
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 1.07;
+  color: #ffffff;
+}
+
+.intro__text {
+  margin: 40px 0 0 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.63;
+  color: #ffffff;
+}
+
+.intro__list {
+  margin: 33px 0 0 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #ffffff;
+  list-style-type: none;
+}
+
+.intro__span-accent {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1279px) {
+  .lead {
+    padding-top: 48px;
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  .section__subtitle {
+    padding-bottom: 56px;
+  }
+
+  .lead__caption {
+    padding-left: calc((100% - 984px) / 2);
+  }
+  .intro {
+    padding-right: calc(442px - ((1280px - 100%) * 0.609375));
+    padding-left: calc(148px - ((1280px - 100%) * 0.390625));
+    max-width: 690px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .lead {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .header {
+    padding-top: 28px;
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  .lead__caption {
+    padding-left: 24px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section__title {
+    font-size: 60px;
+    padding-left: calc((100% - 480px) / 2);
+    padding-right: calc((100% - 480px) / 2);
+  }
+
+  .section__subtitle {
+    padding-left: calc((100% - 420px) / 2);
+    padding-right: calc((100% - 420px) / 2);
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .header {
+    max-height: 42px;
+    padding-top: 16px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .header__logo {
+    max-width: 142px;
+  }
+
+  .header__lang-links {
+    padding-bottom: 8px;
+  }
+
+  .header__lang-link {
+    font-size: 18px;
+    line-height: 1.11;
+  }
+
+  .section__title {
+    padding-left: calc((100% - 288px) / 2);
+    padding-right: calc((100% - 288px) / 2);
+    font-size: 40px;
+    line-height: 1.1;
+  }
+
+  .section__subtitle {
+    padding: 16px calc((100% - 288px) / 2) 40px calc((100% - 288px) / 2);
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .lead__caption {
+    padding-left: 16px;
+  }
+}
