@@ -14,10 +14,6 @@
   padding-bottom: 0;
 }
 
-.place:last-child > .place__paragraphs {
-  gap: 0;
-}
-
 @media screen and (max-width: 1279px) {
   .place {
     grid-template-columns: 440fr 456fr;
@@ -30,10 +26,6 @@
     padding-bottom: 71px;
     grid-template-columns: 340fr 352fr;
     column-gap: 28px;
-  }
-
-  .place:last-child {
-    padding-bottom: 0;
   }
 }
 
@@ -51,10 +43,6 @@
 
 @media screen and (max-width: 425px) {
   .place {
-    padding-bottom: 48px;
-  }
-
-  .place:last-child {
-    padding-bottom: 0;
+    padding-bottom: 49px;
   }
 }
